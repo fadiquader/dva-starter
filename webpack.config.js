@@ -55,5 +55,13 @@ module.exports = (webpackConfig, env) => {
     themes: `${__dirname}/src/themes`,
   }
 
+  webpackConfig.node = {
+    dgram: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+    child_process: 'empty',
+  }
+
   return webpackConfig
 }
