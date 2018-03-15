@@ -18,6 +18,7 @@
     "jsonp": "^0.2.1",
     "less-vars-to-js": "^1.1.2",
     "lodash": "^4.17.4",
+    "nodemon": "^1.17.2",
     "nprogress": "^0.2.0",
     "path-to-regexp": "^2.1.0",
     "prop-types": "^15.5.10",
@@ -58,6 +59,7 @@
     "lint": "eslint --fix --ext .js src",
     "build": "roadhog build",
     "build:dll": "roadhog buildDll",
-    "build:new": "node version && roadhog build"
+    "build:new": "node version && roadhog build",
+    "start:server": "nodemon server/index.js"
   }
 }
